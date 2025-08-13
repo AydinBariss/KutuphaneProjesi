@@ -38,9 +38,21 @@ Web Arayüzü: index.html dosyasını tarayıcıda açarak uygulamayı kullanmay
 
 API Belgeleri: Oluşturulan API'nin tüm uç noktalarını görmek ve test etmek için http://127.0.0.1:8000/docs adresini ziyaret edebilirsiniz.
 
-📌 API Uç Noktaları:
-Uç Nokta:
-/books metot:GET Açıklama:Kütüphanedeki tüm kitapları listeler.
-/add-by-isbn/{isbn} motot:POST Açıklama:Belirtilen ISBN'e sahip kitabı ekler.
-/books/{isbn} metot:DELETE Açıklama:Belirtilen ISBN'e sahip kitabı siler.
+📌 API Uç Noktaları
+GET /books:
 
+Metot: GET
+
+Açıklama: Kütüphanedeki tüm kitapları listeler.
+
+POST /add-by-isbn/{isbn}:
+
+Metot: POST
+
+Açıklama: Belirtilen ISBN'e sahip kitabı ekler.
+
+DELETE /books/{isbn}:
+
+Metot: DELETE
+
+Açıklama: Belirtilen ISBN'e sahip kitabı siler.
