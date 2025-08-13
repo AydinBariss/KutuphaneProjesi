@@ -14,7 +14,14 @@ Modern API: Güçlü ve esnek bir yapı için FastAPI ile geliştirildi.
 🚀 Kurulum ve Başlatma
 Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki basit adımları takip edin.
 
-1. Depoyu Klonlayın
+Uvicorn: FastAPI sunucusunu çalıştırmak için.
+
+Pydantic: Veri modelleri ve doğrulama için.
+
+Httpx: Open Library API'sine istek göndermek için.
+
+Open Library API: Kitap bilgilerini almak için kullanılan harici API.
+
 git clone https://github.com/AydinBariss/KutuphaneProjesi.git
 cd KutuphaneProjesi
 
@@ -33,7 +40,9 @@ API Belgeleri: Oluşturulan API'nin tüm uç noktalarını görmek ve test etmek
 
 📌 API Uç Noktaları
 
+<<<<<<< HEAD
 Uç Nokta               Metot       Açıklama 
 /books                 GET         Kütüphanededki tüm kitapları listeler
 /add-by-isbn/{isbn}    POST        Belirtilen ISBN'e sahip kitabı ekler.
 /books/{isbn}          DELETE      Belirtilen ISBN'e sahip kitabı siler.
+
