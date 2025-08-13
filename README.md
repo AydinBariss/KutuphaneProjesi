@@ -1,53 +1,39 @@
-Kütüphane Yönetim Sistemi
-Bu proje, bir web arayüzü ile yönetilebilen basit bir kütüphane yönetim sistemidir. Kullanıcılar, ISBN numarası girerek kütüphaneye yeni kitaplar ekleyebilir, mevcut kitapları silebilir ve listeyi görüntüleyebilir.
+📚 Kütüphane Yönetim Sistemi
+Bu proje, bir web arayüzü aracılığıyla kitapları yönetmenizi sağlayan basit ve modern bir kütüphane yönetim sistemidir. ISBN numarası ile hızlıca yeni kitaplar ekleyebilir, mevcut kitapları silebilir ve kütüphanenizdeki tüm kitapları listeleyebilirsiniz.
 
-Proje, üç ana bileşenden oluşmaktadır:
+✨ Projenin Öne Çıkan Özellikleri:
 
-FastAPI API: Backend işlemlerini yönetir.
+Web Arayüzü: Kolay kullanımlı, kullanıcı dostu arayüz.
 
-Python Sınıfları: Kitap ve kütüphane verilerinin mantığını içerir.
+API Entegrasyonu: Kitap bilgilerini çekmek için Open Library API'sini kullanır.
 
-Web Arayüzü: Kullanıcıların projeyle etkileşime girmesini sağlar.
+Veri Kalıcılığı: Tüm kitap verileri library.json dosyasında güvenli bir şekilde saklanır.
 
-Kullanılan Teknolojiler
-Python 3.10+
+Modern API: Güçlü ve esnek bir yapı için FastAPI ile geliştirildi.
 
-FastAPI: Web API'sini oluşturmak için.
+🚀 Kurulum ve Başlatma
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki basit adımları takip edin.
 
-Uvicorn: FastAPI sunucusunu çalıştırmak için.
-
-Pydantic: Veri modelleri ve doğrulama için.
-
-Httpx: Open Library API'sine istek göndermek için.
-
-Open Library API: Kitap bilgilerini almak için kullanılan harici API.
-
-Kurulum ve Çalıştırma
-Projenin yerel olarak çalıştırılması için aşağıdaki adımları izleyin.
-
-Projeyi Klonlama:
-
-git clone https://github.com/KullaniciAdin/KutuphaneProjesi.git
+1. Depoyu Klonlayın
+git clone https://github.com/AydinBariss/KutuphaneProjesi.git
 cd KutuphaneProjesi
 
-Gerekli Kütüphaneleri Yükleme:
-
+2. Gerekli Kütüphaneleri Yükleyin
 pip install -r requirements.txt
 
-API Sunucusunu Başlatma:
-
+3. API Sunucusunu Başlatın
 uvicorn api:app --reload
 
-Sunucu başlatıldıktan sonra http://127.0.0.1:8000 adresine erişebilirsiniz.
+Sunucu başlatıldıktan sonra tarayıcınızda http://127.0.0.1:8000 adresine giderek projenin web arayüzüne erişebilirsiniz.
 
-Kullanım Kılavuzu
-Web Arayüzü: Tarayıcınızda index.html dosyasını açarak uygulamayı kullanabilirsiniz.
+📖 Kullanım Kılavuzu
+Web Arayüzü: index.html dosyasını tarayıcıda açarak uygulamayı kullanmaya başlayabilirsiniz.
 
-API Belgeleri: API'nin tüm uç noktalarını görmek ve test etmek için http://127.0.0.1:8000/docs adresini ziyaret edebilirsiniz.
+API Belgeleri: Oluşturulan API'nin tüm uç noktalarını görmek ve test etmek için http://127.0.0.1:8000/docs adresini ziyaret edebilirsiniz.
 
-API Uç Noktaları
-GET /books: Kütüphanedeki tüm kitapları listeler.
+📌 API Uç Noktaları
 
-POST /add-by-isbn/{isbn}: Belirtilen ISBN'e sahip kitabı kütüphaneye ekler.
-
-DELETE /books/{isbn}: Belirtilen ISBN'e sahip kitabı siler.
+Uç Nokta               Metot       Açıklama 
+/books                 GET         Kütüphanededki tüm kitapları listeler
+/add-by-isbn/{isbn}    POST        Belirtilen ISBN'e sahip kitabı ekler.
+/books/{isbn}          DELETE      Belirtilen ISBN'e sahip kitabı siler.
