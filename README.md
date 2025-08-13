@@ -22,7 +22,7 @@ Httpx: Open Library API'sine istek göndermek için.
 
 Open Library API: Kitap bilgilerini almak için kullanılan harici API.
 
-git clone https://github.com/AydinBariss/KutuphaneProjesi.git
+1. git clone https://github.com/AydinBariss/KutuphaneProjesi.git
 cd KutuphaneProjesi
 
 2. Gerekli Kütüphaneleri Yükleyin
@@ -38,11 +38,9 @@ Web Arayüzü: index.html dosyasını tarayıcıda açarak uygulamayı kullanmay
 
 API Belgeleri: Oluşturulan API'nin tüm uç noktalarını görmek ve test etmek için http://127.0.0.1:8000/docs adresini ziyaret edebilirsiniz.
 
-📌 API Uç Noktaları
-
-<<<<<<< HEAD
-Uç Nokta               Metot       Açıklama 
-/books                 GET         Kütüphanededki tüm kitapları listeler
-/add-by-isbn/{isbn}    POST        Belirtilen ISBN'e sahip kitabı ekler.
-/books/{isbn}          DELETE      Belirtilen ISBN'e sahip kitabı siler.
+📌 API Uç Noktaları:
+Uç Nokta:
+/books metot:GET Açıklama:Kütüphanedeki tüm kitapları listeler.
+/add-by-isbn/{isbn} motot:POST Açıklama:Belirtilen ISBN'e sahip kitabı ekler.
+/books/{isbn} metot:DELETE Açıklama:Belirtilen ISBN'e sahip kitabı siler.
 
