@@ -27,7 +27,7 @@ Projenin yerel olarak çalıştırılması için aşağıdaki adımları izleyin
 
 Projeyi Klonlama:
 
-git clone https://github.com/KullaniciAdin/KutuphaneProjesi.git
+git clone https://github.com/AydinBariss/KutuphaneProjesi.git
 cd KutuphaneProjesi
 
 Gerekli Kütüphaneleri Yükleme:
